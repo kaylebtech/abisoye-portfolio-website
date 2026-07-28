@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Abisoye — builds apps, then breaks them properly</title>
+  <meta name="description" content="Oyindamola Caleb Abisoye — mobile developer (React Native, Flutter), manual QA tester and founder at Brivent Global. Builder of Servra, Kinnok and Foodly.">
+  <meta property="og:title" content="Caleb Abisoye — builds apps, then breaks them properly">
+  <meta property="og:description" content="Mobile developer, QA tester and founder. React Native · Flutter · 26+ bugs filed and counting.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23F4EEE1'/%3E%3Cpath d='M20 20h28v28H20z' fill='%231D46C9'/%3E%3Ccircle cx='66' cy='66' r='16' fill='none' stroke='%23DA3A1E' stroke-width='7'/%3E%3Cpath d='M78 78L92 92' stroke='%23DA3A1E' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..900;1,9..144,500..900&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#work">Skip to content</a>
+
+  <!-- ───────────────────────── Nav ───────────────────────── -->
+  <header class="nav">
+    <a class="nav__mark" href="#top" aria-label="Back to top">
+      <span class="nav__logo" aria-hidden="true"></span>
+      <span class="nav__name">Caleb&nbsp;Abisoye</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="qa-toggle" id="qaToggle" type="button" aria-pressed="false"
+            title="Overlay QA annotations on this page (or press Q)">
+      <span class="qa-toggle__dot" aria-hidden="true"></span>
+      <span class="qa-toggle__label">Run&nbsp;QA</span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ───────────────────────── Hero ───────────────────────── -->
+    <section class="hero corners">
+      <p class="kicker reveal">
+        <span class="kicker__id">OYINDAMOLA CALEB ABISOYE</span>
+        <span class="kicker__sep" aria-hidden="true">/</span>
+        <span>MOBILE DEVELOPER · QA · FOUNDER</span>
+      </p>
+
+      <h1 class="hero__title reveal qa-target">
+        I <span class="u-build">build</span> mobile apps&nbsp;—<br>
+        then I do my best<br>
+        to <span class="u-break">break<svg class="u-break__ring" viewBox="0 0 190 88" aria-hidden="true" focusable="false"><path d="M14,50 C12,22 62,8 98,8 C142,8 180,20 178,44 C176,70 128,82 88,80 C48,78 16,70 14,50" pathLength="1"/></svg></span> them.
+        <span class="qa-note" aria-hidden="true">TC-001 · headline survives every viewport — <b class="pass">PASS</b></span>
+      </h1>
+
+      <p class="hero__sub reveal">
+        React&nbsp;Native &amp; Flutter developer and manual QA tester —
+        the person who writes the feature <em>and</em> files the bug report against it.
+        Founder at Brivent&nbsp;Global, where we ship
+        <a href="https://servra.io" target="_blank" rel="noopener">Servra</a>, Kinnok and BIIT.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--ink" href="#work">See the work <span aria-hidden="true">↓</span></a>
+        <a class="btn btn--ghost qa-target" href="mailto:caleb.o.abisoye@gmail.com">caleb.o.abisoye@gmail.com
+          <span class="qa-note" aria-hidden="true">TC-030 · tap target ≥ 48px — <b class="pass">PASS</b></span>
+        </a>
+      </div>
+
+      <!-- QA report card -->
+      <figure class="report reveal qa-target" aria-label="A playful QA self-test report">
+        <figcaption class="report__bar">
+          <span class="report__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="report__file">self-review.spec · run&nbsp;#26</span>
+        </figcaption>
+        <ul class="report__body">
+          <li><span class="tick pass-bg" aria-hidden="true">✓</span> builds cross-platform (iOS · Android) <b class="pass">PASS</b></li>
+          <li><span class="tick pass-bg" aria-hidden="true">✓</span> tests what he ships <b class="pass">PASS</b></li>
+          <li><span class="tick pass-bg" aria-hidden="true">✓</span> files honest, reproducible bug reports <b class="pass">PASS&nbsp;×26</b></li>
+          <li><span class="tick fail-bg" aria-hidden="true">✗</span> leaves a bug unlogged <b class="fail">FAIL — as designed</b></li>
+        </ul>
+        <span class="qa-note" aria-hidden="true">TC-002 · self-review passes — <b class="pass">PASS</b></span>
+      </figure>
+
+      <dl class="stats reveal">
+        <div class="stat"><dt>Bug reports filed</dt><dd>26+</dd></div>
+        <div class="stat"><dt>Products at Brivent</dt><dd>03</dd></div>
+        <div class="stat"><dt>Platforms tested</dt><dd>04</dd></div>
+        <div class="stat"><dt>BIIT community members</dt><dd>14</dd></div>
+      </dl>
+    </section>
+
+    <!-- ───────────────────────── Marquee ───────────────────────── -->
+    <div class="marquee qa-target" aria-hidden="true">
+      <div class="marquee__win">
+        <div class="marquee__track">
+          <span>SERVRA&ensp;✳&ensp;KINNOK&ensp;✳&ensp;FOODLY&ensp;✳&ensp;SMART&nbsp;TRANSIT&ensp;✳&ensp;CURAAI&ensp;✳&ensp;BIIT&ensp;✳&ensp;</span>
+          <span>SERVRA&ensp;✳&ensp;KINNOK&ensp;✳&ensp;FOODLY&ensp;✳&ensp;SMART&nbsp;TRANSIT&ensp;✳&ensp;CURAAI&ensp;✳&ensp;BIIT&ensp;✳&ensp;</span>
+        </div>
+      </div>
+      <span class="qa-note qa-note--low" aria-hidden="true">BR-009 · marquee is decorative; dev refuses to remove — <b class="warn">WONTFIX</b></span>
+    </div>
+
+    <!-- ───────────────────────── Work ───────────────────────── -->
+    <section class="section corners" id="work">
+      <header class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2>Selected work</h2>
+        <p class="section__note">Built, broken, rebuilt — in roughly that order.</p>
+      </header>
+
+      <div class="grid">
+
+        <article class="card card--featured reveal qa-target">
+          <div class="card__bar">
+            <span class="card__id">CASE&nbsp;001</span>
+            <span class="chip chip--live"><i></i>Live</span>
+          </div>
+          <h3 class="card__title">Servra</h3>
+          <p class="card__desc">
+            AI-powered order management that lets food vendors take, track and total
+            WhatsApp orders automatically — no extra app for the customer, no missed
+            messages for the vendor. Built and run under Brivent&nbsp;Global.
+          </p>
+          <p class="card__meta">Founder &amp; Project Manager · Brivent Global</p>
+          <div class="card__tags">
+            <span>AI</span><span>WhatsApp</span><span>Food vendors</span><span>Product</span>
+          </div>
+          <a class="card__link" href="https://servra.io" target="_blank" rel="noopener">servra.io <span aria-hidden="true">↗</span></a>
+          <span class="qa-note" aria-hidden="true">TC-014 · in production with real vendors — <b class="pass">PASS</b></span>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__bar">
+            <span class="card__id">CASE&nbsp;002</span>
+            <span class="chip chip--build"><i></i>In&nbsp;build</span>
+          </div>
+          <h3 class="card__title">Kinnok</h3>
+          <p class="card__desc">
+            A community platform built with React&nbsp;Native and Expo — scoped, designed
+            and managed from zero as one of Brivent's three products.
+          </p>
+          <p class="card__meta">Founder &amp; Project Manager · Brivent Global</p>
+          <div class="card__tags">
+            <span>React Native</span><span>Expo</span><span>Community</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__bar">
+            <span class="card__id">CASE&nbsp;003</span>
+            <span class="chip chip--cap"><i></i>Capstone</span>
+          </div>
+          <h3 class="card__title">Foodly</h3>
+          <p class="card__desc">
+            Food ordering app built end-to-end in React&nbsp;Native as a personal capstone —
+            and then tested like somebody else wrote it.
+          </p>
+          <p class="card__meta">Developer · Personal capstone</p>
+          <div class="card__tags">
+            <span>React Native</span><span>JavaScript</span><span>Solo build</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__bar">
+            <span class="card__id">CASE&nbsp;004</span>
+            <span class="chip chip--cap"><i></i>Team&nbsp;capstone</span>
+          </div>
+          <h3 class="card__title">Smart Transit</h3>
+          <p class="card__desc">
+            Group capstone project — built with a team, which meant shipping code,
+            reviewing other people's, and keeping the project actually moving.
+          </p>
+          <p class="card__meta">Developer · Group capstone</p>
+          <div class="card__tags">
+            <span>Teamwork</span><span>Mobile</span><span>Transit</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__bar">
+            <span class="card__id">CASE&nbsp;005</span>
+            <span class="chip chip--contrib"><i></i>Contributor</span>
+          </div>
+          <h3 class="card__title">CuraAI</h3>
+          <p class="card__desc">
+            Joined as a contributing developer — shipping features on a codebase I didn't
+            start, and leaving it better than I found it.
+          </p>
+          <p class="card__meta">Contributing Developer</p>
+          <div class="card__tags">
+            <span>Collaboration</span><span>AI</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ───────────────────────── Experience ───────────────────────── -->
+    <section class="section corners" id="experience">
+      <header class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2>Experience</h2>
+        <p class="section__note">Two hats, worn at the same time.</p>
+      </header>
+
+      <div class="xp">
+
+        <article class="xp__item reveal">
+          <div class="xp__rail" aria-hidden="true"><span class="xp__node xp__node--blue"></span></div>
+          <div class="xp__body">
+            <p class="xp__where">Soft-Web Digital Ltd.</p>
+            <h3 class="xp__role">Mobile Developer &amp; QA Intern</h3>
+            <ul class="xp__points">
+              <li>Build cross-platform apps in <b>Flutter / Dart</b> — one codebase, iOS and Android.</li>
+              <li>Run structured QA across <b>four platforms</b>: iOS, Android, web and admin.</li>
+              <li>Logged <b>26+ reproducible bug reports</b> — each with steps, expected vs. actual, and severity.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="xp__item reveal qa-target">
+          <div class="xp__rail" aria-hidden="true"><span class="xp__node xp__node--red"></span></div>
+          <div class="xp__body">
+            <p class="xp__where">Brivent Global Innovation Ltd</p>
+            <h3 class="xp__role">Founder &amp; Project Manager</h3>
+            <ul class="xp__points">
+              <li>Run a tech holding company with <b>three products</b> in flight.</li>
+              <li><b>Servra</b> — AI-powered WhatsApp order management for food vendors, live at servra.io.</li>
+              <li><b>Kinnok</b> — community platform built on React&nbsp;Native / Expo.</li>
+              <li><b>BIIT</b> — a youth tech community I founded, currently <b>14 members</b> strong.</li>
+            </ul>
+            <span class="qa-note" aria-hidden="true">TC-021 · runs three products without dropping the intern job — <b class="pass">PASS</b></span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ───────────────────────── Toolkit ───────────────────────── -->
+    <section class="section corners" id="toolkit">
+      <header class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2>Toolkit</h2>
+        <p class="section__note">One half ships it. The other half is suspicious of it.</p>
+      </header>
+
+      <div class="kit">
+        <div class="kit__panel kit__panel--build reveal">
+          <p class="kit__label"><span aria-hidden="true">▙</span> BUILD</p>
+          <ul class="kit__list">
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>Flutter</li>
+            <li>Dart</li>
+            <li>JavaScript</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="kit__panel kit__panel--break reveal qa-target">
+          <p class="kit__label"><span aria-hidden="true">✗</span> BREAK</p>
+          <ul class="kit__list">
+            <li>Manual QA testing</li>
+            <li>Bug tracking &amp; reporting</li>
+            <li>Cross-platform test passes</li>
+            <li>iOS · Android · Web · Admin</li>
+          </ul>
+          <span class="qa-note" aria-hidden="true">TC-022 · breaker skills verified 26+ times — <b class="pass">PASS</b></span>
+        </div>
+        <div class="kit__strip reveal">
+          <p class="kit__label kit__label--inline">AND ALSO</p>
+          <ul class="kit__inline">
+            <li>Git</li>
+            <li>Product management basics</li>
+            <li>Project management basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── Contact ───────────────────────── -->
+    <section class="section section--contact corners" id="contact">
+      <header class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2>Contact</h2>
+        <p class="section__note">Currently open to interesting problems.</p>
+      </header>
+
+      <p class="contact__title reveal">
+        Let's <span class="u-build">build</span> something&nbsp;—<br>
+        <span class="contact__alt">(or break something, professionally.)</span>
+      </p>
+
+      <div class="contact__actions reveal">
+        <a class="btn btn--ink btn--big" href="mailto:caleb.o.abisoye@gmail.com">Email me <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost btn--big" href="https://www.linkedin.com/in/oyindamola-abisoye-a12269333" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a class="btn btn--ghost btn--big" href="https://github.com/kaylebtech" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer qa-target">
+    <p>© <span id="year">2026</span> Oyindamola Caleb Abisoye</p>
+    <p class="footer__note">Built by hand. Tested by hand. Broken on purpose, fixed on principle.</p>
+    <span class="qa-note qa-note--up" aria-hidden="true">BR-026 · dev keeps tweaking letter-spacing — <b class="warn">KNOWN&nbsp;ISSUE</b></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
